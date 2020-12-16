@@ -33,7 +33,7 @@ void dfs( int u ) {
 void tarjan() {
 	memset( scc, -1, sizeof scc );
 	memset( in, -1, sizeof in );
-	for( int i = 1 ; i <= n ; ++i ) if (scc[i] == -1) dfs(i);
+	for( int i = 0 ; i < n ; ++i ) if (scc[i] == -1) dfs(i);
 }
 
 // Mount condensed graph
